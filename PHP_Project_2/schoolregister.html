@@ -2,15 +2,14 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Signup | Learning Curve</title>
+        <title>register schools| Learning Curve</title>
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-        <script src="js/bootstrap.min.js"></script>
-        <body background="https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80 ">
+            <body background="https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80">
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -34,34 +33,33 @@
             <div class="row">
                 <div class="container">
                     <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
-                        <h2>SIGN UP</h2>
-                        <form  action="login_func.php" name="signup" method="POST">
+                      <!--  <h2>REGISTRATION FOR SCHOOLS</h2> -->
+                       <h2><font color="white">REGISTRATION FOR SCHOOLS</font> </h2>
+                        <form  action="signup_script.html" method="POST">
                             <div class="form-group">
-                                <input class="form-control" placeholder="Name" name="name"  required>
+                                <input class="form-control" placeholder="school name" name="School name"  required>
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control"  placeholder="Email"  name="e-mail" required>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Password" name="password" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Re-enter password" name="pass" required>
-                            </div>
+                                    <input type="text" class="form-control"  placeholder="number of faculty" maxlength="10" size="10" name="Number of faculty" required>
+                                </div>
                             <div class="form-group">
                                 <input type="text" class="form-control"  placeholder="Contact" maxlength="10" size="10" name="contact" required>
                             </div>
                             
-                            <div>
+                         <!--   <div>
                                 <select class="form-control" name="school" required="">
                                     <option value="Govt High School,Himayat Nagar, Hyderabad">Govt High School,Himayat Nagar, Hyderabad</option>
                                     <option value="Govt High School,pragathi nagar, Hyderabad">Govt High School,pragathi nagar, Hyderabad</option>
                                     <option value="Govt High School,panjagutta, Hyderabad">Govt High School,panjagutta, Hyderabad</option>
                                     <option value="Govt High School,bachupally, Hyderabad">Govt High School,bachupally, Hyderabad</option>
                                 </select>
-                        </div>
+                        </div> -->
+
                         <br>
-                            <button type="submit" name="signup" class="btn btn-primary">Submit</button>
+                            <button type="submit" name="register" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>
