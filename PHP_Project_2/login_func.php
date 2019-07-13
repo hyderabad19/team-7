@@ -1,6 +1,8 @@
 <?php
 session_start();
+
 $con=mysqli_connect("localhost","root","","lcdb");
+
 if(isset($_POST['login']))
 {
 	$email=$_POST['e-mail'];
@@ -8,7 +10,7 @@ if(isset($_POST['login']))
 	if($email=="admin@gmail.com" && $password=="password"){
 		echo "<script>window.open('upload.php','_self')</script>";
 	}
-	$query="SELECT * FROM `user` WHERE email='$email' AND password='$password'";
+	$query="select * from user where email='$email' and password='$password'";
 $result=mysqli_query($con,$query);
 $row=mysqli_fetch_array($result);
 if(mysqli_num_rows($result)==1)
@@ -18,12 +20,8 @@ if(mysqli_num_rows($result)==1)
 	$_SESSION['id']=$row['id']; 
 	$_SESSION['department']=$row['department'];
 	$_SESSION['mobile']=$row['mobile'];
-<<<<<<< Updated upstream
-	header("Location:videos.html");
-=======
 	header("Location:display.php");
 
->>>>>>> Stashed changes
 }
 else
 {
@@ -44,11 +42,7 @@ if(isset($_POST['signup']))
 	echo $name,$email,$password,$contact,$school;
 if($password==$pass)
 {
-<<<<<<< Updated upstream
-	$query="INSERT INTO `user` (name,email,password,contact,school,is_approved) values('$name','$email','$password','$contact','$school',0)";
-=======
 	$query="INSERT INTO `user`(name,email,password,contact,school) VALUES('$name','$email','$password','$contact','$school')";
->>>>>>> Stashed changes
 	$result=mysqli_query($con,$query);
 	echo $result;
 	if($result)
@@ -70,4 +64,6 @@ else
 		echo "<script>window.open('signup.html','_self')</script>";
 	}
 }
-?> 
+
+
+?>
