@@ -1,9 +1,7 @@
 <?php require('db.php') ?>
 <table width="80%" border="1">
     <tr>
-    <td>File Name</td>
-    <td>File Type</td>
-    <td>File Size(KB)</td>
+  
     <td>View</td>
     </tr>
     <?php
