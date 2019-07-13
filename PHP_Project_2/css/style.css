@@ -7,7 +7,21 @@ html {
 body{
     padding-top:100px;
 }
-
+body, html {
+    height: 100%;
+  }    
+  .bg { 
+    /* The image used */
+    background-image: url("b.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 body,
 h1,
 h2,
@@ -27,7 +41,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg_1.jpg) no-repeat center center;
+    background: url(../img/a.jpg) no-repeat center center;
     background-size: cover;
 }
 
