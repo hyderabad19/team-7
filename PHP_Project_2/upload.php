@@ -18,8 +18,14 @@
 </form>
 
 <?php
+<<<<<<< Updated upstream
 
 require('db.php');
+=======
+session_start();
+
+$conn=mysqli_connect("localhost","root","","lcdb");
+>>>>>>> Stashed changes
 // 'test'.$conn;
 if(isset($_POST['btn-upload']))
 {    
@@ -31,8 +37,13 @@ if(isset($_POST['btn-upload']))
  $folder="uploads/";
  
  move_uploaded_file($file_loc,$folder.$file);
+<<<<<<< Updated upstream
  $sql="INSERT INTO uploadfile(filename,type,size) VALUES('$file','$file_type','$file_size')";
  $conn->exec($sql); 
+=======
+ $sql="INSERT INTO `uploadfile`(filename,type,size) VALUES('$file','$file_type','$file_size')";
+ $result=mysqli_query($conn,$sql);
+>>>>>>> Stashed changes
 }
 ?>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
