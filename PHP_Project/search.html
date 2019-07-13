@@ -2,68 +2,60 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-* {box-sizing: border-box;}
-
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #e9e9e9;
+* {
+  box-sizing: border-box;
 }
 
-.topnav a {
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
   float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  width: 80%;
+  background: #f1f1f1;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
   color: white;
-}
-
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
   font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    float: left;
-    display: block;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 </style>
 </head>
 <body>
 
-<div class="topnav">
-  <input type="text" placeholder="Search..">
-</div>
+<h2>Search Button</h2>
+
+<p>Full width:</p>
+<form class="example" action="search_text.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit" name="search"><i class="fa fa-search"></i></button>
+</form>
+
+
+</form>
+
 </body>
-</html>
+</html> 
