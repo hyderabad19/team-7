@@ -83,11 +83,10 @@ if(isset($_POST['btn-upload']))
  $folder="uploads/";
  
  move_uploaded_file($file_loc,$folder.$file);
- $sql="INSERT INTO uploadfile(filename,type,size) VALUES('$file','$file_type','$file_size')";
-
- $conn->exec($sql); 
- echo $conn;
+ $sql="INSERT INTO `uploadfile`(filename,type,size) VALUES('$file','$file_type','$file_size')";
+ $result=mysqli_query($conn,$sql);
 echo "<script>alert('Uploaded successfully')</script>";
+
 }
 ?>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

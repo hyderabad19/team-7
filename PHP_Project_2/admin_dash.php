@@ -35,10 +35,19 @@
             </div>
         </div>
 
+        
         <div id="content">
             <!--Main banner image-->
             <div id = "banner_image">
-               
+                <div class="container"> 
+                    <center>
+                        <div id="banner_content">
+                            <h1>WELCOME TO</h1>
+                            <p>LEARNING CURVE</p>
+                            <br/>
+                        </div>
+                    </center>
+                </div>
             </div>
     </body>
 </html>

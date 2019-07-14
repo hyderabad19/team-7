@@ -5,6 +5,7 @@
 <head></head>
 <body>
 <?php
+require('db.php');
 if(isset($_POST['btn-upload']))
 {    
      
