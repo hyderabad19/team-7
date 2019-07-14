@@ -24,7 +24,7 @@
                     <ul class="nav navbar-nav navbar-right">
                          <li><a href = "approve_user.php"><span class = "glyphicon glyphicon-user"></span>Approve User</a></li>
                          <li><a href = "analytics/index.html"><span class = "glyphicon glyphicon-signal"></span>Get Analytics</a></li>
-                        <li><a href = "#"><span class = "glyphicon glyphicon-save"></span>Upload Content</a></li>
+                        <li><a href = "upload.php"><span class = "glyphicon glyphicon-save"></span>Upload Content</a></li>
                          <li><a href = "#"><span class = "glyphicon glyphicon-trash"></span>Delete Content</a></li>
                           <li><a href = "schoolregister.html"><span class = "glyphicon glyphicon-home"></span>Add School</a></li>
                         <li><a href = "logout.php"><span class = "glyphicon glyphicon-log-in"></span> Logout</a></li>

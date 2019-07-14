@@ -3,7 +3,7 @@ require('db.php');
 $se=$_REQUEST["search"];
 //var $pdo;
 
-$data = $conn ->query("SELECT * FROM db1.uploadfile WHERE filename like '%$se%'")->fetchAll();
+$data = $conn ->query("SELECT * FROM lcdb.uploadfile WHERE filename like '%$se%'")->fetchAll();
 // and somewhere later:
 foreach ($data as $row)
  {
