@@ -18,10 +18,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="index.html">Learning Curve</a>
+                    <img src="https://img-resize.com/view/ffae87b7611c510b88cd09fac2ee6031.jpg" alt="curve">
+                    <a class="navbar-brand" href="index.html"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
+                          <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
                          <li><a href = "approve_user.php"><span class = "glyphicon glyphicon-user"></span>Approve User</a></li>
                          <li><a href = "analytics/index.html"><span class = "glyphicon glyphicon-signal"></span>Get Analytics</a></li>
                         <li><a href = "upload.php"><span class = "glyphicon glyphicon-save"></span>Upload Content</a></li>
@@ -33,39 +35,10 @@
             </div>
         </div>
 
-        <div class="container" id="content">
-
-
-            <div class="row text-center" id="cameras">
-                <div class="col-md-3 col-sm-6 home-feature">
-                    <div class="thumbnail">
-                        <img src="img/5.jpg" alt="">
-                        <div class="caption">
-                            <h3>hburg </h3>
-                            <p>jnhiuheo</p>
-                            <p><a href="#" role="button" class="btn btn-primary btn-block">View video</a></p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-3 col-sm-6 home-feature">
-                    <div class="thumbnail">
-                        <img src="#" alt="">
-                        <div class="caption">
-                            <h3>hburg </h3>
-                            <p>jnhiuheo</p>
-                            <p><a href="#" role="button" class="btn btn-primary btn-block">View video</a></p>
-                        </div>
-                    </div>
-                </div>
-                
-            <hr>
-        </div>
-        <footer>
-            <div class="container">
-                <center>
-                    <p></p>	
-                </center>
+        <div id="content">
+            <!--Main banner image-->
+            <div id = "banner_image">
+               
             </div>
-        </footer>
     </body>
 </html>
