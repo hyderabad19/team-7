@@ -79,8 +79,9 @@
 </html>
 
 <?php
+session_start();
 
-require('db.php');
+$conn=mysqli_connect("localhost","root","","lcdb");
 // 'test'.$conn;
 if(isset($_POST['btn-upload']))
 {    
