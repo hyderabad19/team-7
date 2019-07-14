@@ -1,14 +1,12 @@
 <?php
 session_start();
-
 $con=mysqli_connect("localhost","root","","lcdb");
-
 if(isset($_POST['login']))
 {
 	$email=$_POST['e-mail'];
 	$password=$_POST['password'];
-	if($email=="admin@gmail.com" && $password=="password"){
-		echo "<script>window.open('upload.php','_self')</script>";
+	if($email=="admin@gmail.com" && $password="password"){
+		echo "<script>window.open('admin_dash.php','_self')</script>";
 	}
 	$query="select * from user where email='$email' and password='$password'";
 $result=mysqli_query($con,$query);
@@ -20,8 +18,7 @@ if(mysqli_num_rows($result)==1)
 	$_SESSION['id']=$row['id']; 
 	$_SESSION['department']=$row['department'];
 	$_SESSION['mobile']=$row['mobile'];
-	header("Location:display.php");
-
+	header("Location:videos.html");
 }
 else
 {
@@ -42,7 +39,7 @@ if(isset($_POST['signup']))
 	echo $name,$email,$password,$contact,$school;
 if($password==$pass)
 {
-	$query="INSERT INTO `user`(name,email,password,contact,school) VALUES('$name','$email','$password','$contact','$school')";
+	$query="insert into user(name,email,password,contact,school,is_approved) values('$name','$email','$password','$contact','$school',0)";
 	$result=mysqli_query($con,$query);
 	echo $result;
 	if($result)
@@ -64,6 +61,8 @@ else
 		echo "<script>window.open('signup.html','_self')</script>";
 	}
 }
-
-
 ?>
+
+
+
+

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,55 +23,71 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                        <li><a href="feedback.php"><span class="glyphicon glyphicon-home"></span>Feedback</a></li>
                         <li><a href = "settings.html"><span class = "glyphicon glyphicon-user"></span> Settings</a></li>
-                        <li><a href = "logout_script.html"><span class = "glyphicon glyphicon-log-in"></span> Logout</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Notifications</a></li>
+                        <li><a href = "logout.php"><span class = "glyphicon glyphicon-log-in"></span> Logout</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="container" id="content">
+            <h2>Search Button</h2>
 
+<p>Full width:</p>
+<form class="example" action="search_text.php" method="POST">
+  <input type="text" placeholder="Search.." name="data">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<!--         <div class="container" id="content">
+ -->
 
             <div class="row text-center" id="cameras">
-                <div class="col-md-3 col-sm-6 home-feature">
+                 <div class="col-md-4 col-sm-6 home-feature">
                     <div class="thumbnail">
-                        <img src="img/5.jpg" alt="">
+                        <video width="320" height="240" controls>
+                            <source src="img/v1.mp4" type="video/mp4" align="center" width="100%">
+     
+                    </video>
                         <div class="caption">
-                            <h3>hburg </h3>
-                            <p>jnhiuheo</p>
+                            <h3>Video 1 </h3>
+                            <p>  This is Sample Video</p>
                             <p><a href="#" role="button" class="btn btn-primary btn-block">View video</a></p>
                         </div>
                     </div>
                 </div>
-                 <div class="col-md-3 col-sm-6 home-feature">
+                 <div class="col-md-4 col-sm-6 home-feature">
                     <div class="thumbnail">
-                        <img src="#" alt="">
+                        <video width="320" height="240" controls>
+                            <source src="img/v1.mp4" type="video/mp4" align="center" width="100%">
+     
+                    </video>
                         <div class="caption">
-                            <h3>hburg </h3>
-                            <p>jnhiuheo</p>
+                            <h3>Video 2 </h3>
+                            <p>  This is Sample Video</p>
                             <p><a href="#" role="button" class="btn btn-primary btn-block">View video</a></p>
                         </div>
                     </div>
                 </div>
-                 <div class="col-md-3 col-sm-6 home-feature">
+                <div class="col-md-4 col-sm-6 home-feature">
                     <div class="thumbnail">
-                        <img src="#" alt="">
+                        <video width="320" height="240" controls>
+                            <source src="img/v1.mp4" type="video/mp4" align="center" width="100%">
+     
+                    </video>
                         <div class="caption">
-                            <h3>hburg </h3>
-                            <p>jnhiuheo</p>
+                            <h3>Video 3 </h3>
+                            <p>  This is Sample Video</p>
                             <p><a href="#" role="button" class="btn btn-primary btn-block">View video</a></p>
                         </div>
                     </div>
                 </div>
-                 <div class="col-md-3 col-sm-6 home-feature">
-                    <div class="thumbnail">
-                        <iframe class="center" width="260" height="315" src="https://www.youtube.com/embed/K4n5RbqfVzI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                </div>
-               
+            </div>               
             <hr>
         </div>
+
         <footer>
             <div class="container">
                 <center>
