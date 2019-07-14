@@ -1,8 +1,6 @@
 <?php
 session_start();
-
 $con=mysqli_connect("localhost","root","","lcdb");
-
 if(isset($_POST['login']))
 {
 	$email=$_POST['e-mail'];
@@ -18,7 +16,6 @@ if(mysqli_num_rows($result)==1)
 	$_SESSION['department']=$row['department'];
 	$_SESSION['mobile']=$row['mobile'];
 	header("Location:videos.html");
-
 }
 else
 {
@@ -39,7 +36,7 @@ if(isset($_POST['signup']))
 	echo $name,$email,$password,$contact,$school;
 if($password==$pass)
 {
-	$query="insert into user(name,email,password,contact,school) values('$name','$email','$password','$contact','$school')";
+	$query="insert into user(name,email,password,contact,school,is_approved) values('$name','$email','$password','$contact','$school',0)";
 	$result=mysqli_query($con,$query);
 	echo $result;
 	if($result)
@@ -61,6 +58,4 @@ else
 		echo "<script>window.open('signup.html','_self')</script>";
 	}
 }
-
-
-?>
+?> 
